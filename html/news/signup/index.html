@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>회원 가입 폼</title>
+  </head>
+  <body>
+    <h2>NAVER</h2>
+    <form>
+      <div>
+        <div>
+          <label>
+            <input type="text" id="userId" name="userId" placeholder="아이디" required />
+          </label>
+        </div>
+        <div>
+          <label>
+            <input type="password" id="password" name="password" placeholder="비밀번호" required />
+          </label>
+        </div>
+        <div>
+          <label>
+            <input type="email" id="email" name="email" placeholder="[선택] 이메일주소(비밀번호 찾기 등 본인 확인용)" />
+          </label>
+        </div>
+      </div>
+
+      <br />
+
+      <div>
+        <div>
+          <label>
+            <input type="text" id="name" name="name" placeholder="이름" required />
+          </label>
+        </div>
+        <div>
+          <label>
+            <input type="number" id="birth" name="birth" placeholder="생년월일 8자리" />
+          </label>
+        </div>
+        <div>
+          <label>
+            <select id="telecom" name="telecom">
+              <option value="">SKT</option>
+              <option value="M">KT</option>
+              <option value="F">LG U+</option>
+            </select>
+          </label>
+        </div>
+        <div>
+          <ul>
+            <li>
+              <label>
+                남자
+                <input type="radio" id="gender_m" name="gender" value="M" />
+              </label>
+            </li>
+            <li>
+              <label>
+                여자
+                <input type="radio" id="gender_f" name="gender" value="F" />
+              </label>
+            </li>
+          </ul>
+          <ul>
+            <li>
+              <label>
+                내국인
+                <input type="radio" id="foreigner1" name="foreigner" value="K" />
+              </label>
+            </li>
+            <li>
+              <label>
+                외국인
+                <input type="radio" id="foreigner2" name="foreigner" value="F" />
+              </label>
+            </li>
+          </ul>
+        </div>
+
+        <br />
+
+        <div>
+          <input type="number" placeholder="휴대전화번호" />
+        </div>
+
+        <br />
+
+        <div>
+          <label>
+            [필수] 인증 약관 전체동의
+            <input type="checkbox" id="agree1" name="agree1" />
+          </label>
+        </div>
+
+        <br />
+      </div>
+
+      <button type="submit">인증요청</button>
+    </form>
+  </body>
+</html>
